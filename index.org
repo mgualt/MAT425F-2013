@@ -1,0 +1,88 @@
+#+TITLE: Differential Topology
+#+DATE: <2013-08-17 Sat>
+#+AUTHOR: Marco Gualtieri
+#+EMAIL: mgualt@math.toronto.edu
+#+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not LOGBOOK) date:t e:t
+#+OPTIONS: email:nil f:t inline:t num:nil p:nil pri:nil stat:t tags:t
+#+OPTIONS: tasks:t tex:t timestamp:t toc:nil todo:t |:t
+#+CREATOR: Emacs 24.3.50.1 (Org mode 8.0.7)
+#+EXCLUDE_TAGS: noexport
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+OPTIONS: html-postamble:nil html-preamble:t
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.50.1 (<a href="http://orgmode.org">Org</a> mode 8.0.7)
+#+HTML_CONTAINER: div
+#+HTML_DOCTYPE: <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+* Course information
+  :PROPERTIES: 
+  :HTML_CONTAINER_CLASS: courseinfo
+  :END:
+   _Code:_ [[http://www.artsandscience.utoronto.ca/ofr/calendar/crs_mat.htm#MAT425H1][MAT425F]] / [[http://www.math.toronto.edu/cms/tentative-2013-2014-graduate-courses-descriptions/#MAT1340HF][MAT1340F]]  \\
+   _Instructor:_ [[http://www.math.toronto.edu/mgualt][Marco Gualtieri]], office hours by appointment.\\
+   _Class schedule:_ W1-3 and R11\\
+   _Evaluation:_ \\
+   _Exams:_\\
+     
+   This course is an introduction to the topological aspects of smooth
+   spaces in arbitrary dimension.  The main tools will include
+   transversality theory of smooth maps, Morse theory and basic
+   Riemannian geometry, and surgery theory.  We hope to give a
+   treatment of 4-dimensional manifolds and Kirby calculus.
+   Coursework will involve exercises as well as class presentations.
+
+* Resources
+** _Books_
+   The following is a list of texts which I will be following to
+   various degrees. These are not required texts in the usual sense,
+   but they are very beautiful and important texts which it would not
+   hurt to own a copy of.
+
+   - Guillemin-Pollack: /Differential Topology/
+   - Milnor: /Topology from the differentiable viewpoint/
+   - Milnor: /Morse Theory/
+   - Kirby: /The topology of 4-manifolds/
+   - Arnol'd: /Catastrophe Theory/ (1992)
+
+** _Related Articles_                                                         
+   - [[http://www.math.toronto.edu/mgualt/Morse%2520Theory/Morse%2520theory%25201990s.pdf][Morse theory in the 1990s]], M. Guest.
+   - [[http://www.pnas.org/content/early/2011/04/18/1018465108.full.pdf][Morse 2-functions]], D. Gay and R. Kirby.
+   - [[http://www.gaianxaos.com/pdf/dynamics/zeeman-catastrophe_theory.pdf][Catastrophe Theory]], E. Zeeman.
+   - [[http://www.phy.bris.ac.uk/people/berry_mv/the_papers/Berry213.pdf][Beyond Rainbows]], M. Berry.
+   - [[http://www.ams.org/notices/201106/rtx110600804p.pdf][Differential Topology Forty-six Years Later]], J. Milnor.
+    
+* Assignments
+* Notes
+* COMMENT 
+#+srcname: org-publish
+#+BEGIN_SRC emacs-lisp
+  (setq org-html-head-include-default-style nil)
+  (setq org-html-head-include-scripts nil)
+  (setq org-publish-project-alist
+          '(("org"
+             :base-extension "org"
+             :publishing-function org-html-publish-to-html
+             :base-directory "." 
+             :publishing-directory "./public_html"
+             :section-numbers nil
+             :with-toc nil
+             :html-head "<link rel=\"stylesheet\"
+                          href=\"stylesheet.css\"
+                          type=\"text/css\"/>"
+             )
+            ("css"
+             :base-extension "css"
+             :publishing-function org-publish-attachment
+             :base-directory "."
+             :publishing-directory "./public_html"
+             )
+            )
+          )
+#+END_SRC
+
+#+RESULTS:
+| org | :base-extension | org | :publishing-function | org-html-publish-to-html | :base-directory | . | :publishing-directory | ./public_html | :section-numbers | nil | :with-toc | nil | :html-head | <link rel="stylesheet"\n                        href="stylesheet.css"\n                        type="text/css"/> |
+| css | :base-extension | css | :publishing-function | org-publish-attachment   | :base-directory | . | :publishing-directory | ./public_html |                  |     |           |     |            |                                                                                                                  |
+
