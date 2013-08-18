@@ -29,7 +29,7 @@
    This course is an introduction to the topological aspects of smooth
    spaces in arbitrary dimension.  The main tools will include
    transversality theory of smooth maps, Morse theory and basic
-   Riemannian geometry, and surgery theory.  We hope to give a
+   Riemannian geometry, as well as surgery theory.  We hope to give a
    treatment of 4-dimensional manifolds and Kirby calculus.
    Coursework will involve exercises as well as class presentations.
 
@@ -40,11 +40,11 @@
    but they are very beautiful and important texts which it would not
    hurt to own a copy of.
 
-   - Guillemin-Pollack: /Differential Topology/
+   - Guillemin-Pollack: /Differential topology/
    - Milnor: /Topology from the differentiable viewpoint/
-   - Milnor: /Morse Theory/
+   - Milnor: /Morse theory/
    - Kirby: /The topology of 4-manifolds/
-   - Arnol'd: /Catastrophe Theory/ (1992)
+   - Arnol'd: /Catastrophe theory/ (1992)
 
 ** _Related Articles_                                                         
    - [[http://www.math.toronto.edu/mgualt/Morse%2520Theory/Morse%2520theory%25201990s.pdf][Morse theory in the 1990s]], M. Guest.
@@ -65,24 +65,23 @@
              :base-extension "org"
              :publishing-function org-html-publish-to-html
              :base-directory "." 
-             :publishing-directory "./public_html"
+             :publishing-directory "."
              :section-numbers nil
              :with-toc nil
              :html-head "<link rel=\"stylesheet\"
                           href=\"stylesheet.css\"
                           type=\"text/css\"/>"
              )
-            ("css"
-             :base-extension "css"
-             :publishing-function org-publish-attachment
-             :base-directory "."
-             :publishing-directory "./public_html"
+            ;; ("css"
+            ;;  :base-extension "css"
+            ;;  :publishing-function org-publish-attachment
+            ;;  :base-directory "."
+            ;;  :publishing-directory "./public_html"
+            ;;  )
              )
-            )
           )
 #+END_SRC
 
 #+RESULTS:
-| org | :base-extension | org | :publishing-function | org-html-publish-to-html | :base-directory | . | :publishing-directory | ./public_html | :section-numbers | nil | :with-toc | nil | :html-head | <link rel="stylesheet"\n                        href="stylesheet.css"\n                        type="text/css"/> |
-| css | :base-extension | css | :publishing-function | org-publish-attachment   | :base-directory | . | :publishing-directory | ./public_html |                  |     |           |     |            |                                                                                                                  |
+| org | :base-extension | org | :publishing-function | org-html-publish-to-html | :base-directory | . | :publishing-directory | . | :section-numbers | nil | :with-toc | nil | :html-head | <link rel="stylesheet"\n                        href="stylesheet.css"\n                        type="text/css"/> |
 
